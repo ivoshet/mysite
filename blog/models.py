@@ -13,6 +13,7 @@ class Games(models.Model):
     # to upload file in directory blog/upload
 
     file = models.FileField(upload_to='blog/upload', verbose_name='Файл')
+    description = models.TextField()
     counter = models.PositiveIntegerField(default=0, verbose_name='Количество загрузок')
     created = models.DateTimeField(default=timezone.now, verbose_name='Создан')
 
