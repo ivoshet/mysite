@@ -1,3 +1,4 @@
+from distutils.command.upload import upload
 from tabnanny import verbose
 from django.db import models
 from django.conf import settings
@@ -16,6 +17,9 @@ class Games(models.Model):
     description = models.TextField()
     counter = models.PositiveIntegerField(default=0, verbose_name='Количество загрузок')
     created = models.DateTimeField(default=timezone.now, verbose_name='Создан')
+
+    # IVOSHET: for upload and show icons of apps
+    image = models.FileField(upload_to="upload", verbose_name='картинка')
 
     def __str__(self):
         return self.title
