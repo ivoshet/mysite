@@ -13,7 +13,24 @@
       </h1>
     </div>
     <div>
-        
+        {% for game in games %}
+          <div>
+            <p>
+              <h3>
+                {{game.title}}
+              </h3>
+            </p>
+            <p>
+              {{game.created}}
+            </p>
+            <p>
+              {{game.description|linebreaksbr}}
+            </p>
+            <p>
+              <a href="">скачать</a>
+            </p>
+          </div>
+        {% endfor %}
     </div>
     <div>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim metus,
