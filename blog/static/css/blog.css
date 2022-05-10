@@ -1,0 +1,18 @@
+h1 a {
+    color: red;
+}
+
+h3 {
+    color: green;
+}
+
+body {
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+#footer {
+    display: flex;
+    align-items: flex-end;
+    height: 200px;
+}
