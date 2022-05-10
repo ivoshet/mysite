@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games</title>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}" type="text/css" />
+  </head>
+  <body>
+    <div id="base-header">
+      <h1>КАЧОК-studio</h1>
+    </div>
+    <div class="content-container">{% block content %} {% endblock %}</div>
+    <div id="footer">
+      <div>
+        <p>Ivoshet 2022 &copy;</p>
+        <p>e-mail: ivan.v.shet@gmail.com</p>
+      </div>
+    </div>
+  </body>
+</html>
