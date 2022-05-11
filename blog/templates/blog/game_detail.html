@@ -1,0 +1,27 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<div class='game_detail'>
+    <p>
+        <h3>
+          {{game.title}}
+        </h3>
+      </p>
+      <p>
+        <img src="{{game.image.url}}" alt="icon" srcset="">
+      </p>
+      <p>
+        Добавлен
+        {{game.created}}
+      </p>
+      <p>
+        {{game.description|linebreaksbr}}
+      </p>
+    </p>
+    <p>
+        <a href="{{game.file.url}}">скачать >>></a>
+    </p>
+    <p>
+        <a href="{% url 'game_list' %}">на главную >>></a>
+    </p>
+</div>
+{% endblock %}

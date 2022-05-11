@@ -11,13 +11,7 @@
         <img src="{{game.image.url}}" alt="icon" srcset="">
       </p>
       <p>
-        {{game.created}}
-      </p>
-      <p>
-        {{game.description|linebreaksbr}}
-      </p>
-      <p>
-        <a href="{{game.file.url}}">скачать</a>
+        <a href="{% url 'game_detail' pk=game.pk %}">подробнее</a>
       </p>
     </div>
   {% endfor %}
